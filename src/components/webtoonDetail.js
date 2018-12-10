@@ -41,35 +41,35 @@ export default class WebtoonCard extends React.Component{
                             </Card.Content>
                         </Card>   
                         <Link as={NavLink} to={`/details/${detail.suggestionList[0]}`}>                     
-                            <Card style={{ margin: '10px 10px 10px 10px' }}>
+                            <Card as={NavLink} to={`/details/${detail.suggestionList[0]}`} style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[0]}</Card.Header>
                                 </Card.Content>
                             </Card>
                         </Link>
                         <Link to={`/details/${detail.suggestionList[1]}`}>                     
-                            <Card style={{ margin: '10px 10px 10px 10px' }}>
+                            <Card as={NavLink} to={`/details/${detail.suggestionList[0]}`} style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[1]}</Card.Header>
                                 </Card.Content>
                             </Card>
                         </Link>
                         <Link to={`/details/${detail.suggestionList[2]}`}>                     
-                            <Card style={{ margin: '10px 10px 10px 10px' }}>
+                            <Card as={NavLink} to={`/details/${detail.suggestionList[0]}`} style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[2]}</Card.Header>
                                 </Card.Content>
                             </Card>
                         </Link>
                         <Link to={`/details/${detail.suggestionList[3]}`}>                     
-                            <Card style={{ margin: '10px 10px 10px 10px' }}>
+                            <Card as={NavLink} to={`/details/${detail.suggestionList[0]}`} style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[3]}</Card.Header>
                                 </Card.Content>
                             </Card>
                         </Link>
                         <Link to={`/details/${detail.suggestionList[4]}`}>                     
-                            <Card style={{ margin: '10px 10px 10px 10px' }}>
+                            <Card as={NavLink} to={`/details/${detail.suggestionList[0]}`} style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[4]}</Card.Header>
                                 </Card.Content>
