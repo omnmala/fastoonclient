@@ -1,16 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Image } from 'semantic-ui-react';
-import { getSeries } from '../client';
+import { getCurating } from '../client';
 
-export default class WebtoonCard extends React.Component{
+export default class CurationWebtoon extends React.Component{
 
     state = {
         series: []
     }
     
     _getSeries = () => {
-        getSeries()
+        getCurating()
             .then(res => {
                 this.setState({ series: res.data });
             })

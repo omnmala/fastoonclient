@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import {
     Button,
     Menu,
@@ -38,7 +38,7 @@ export default class WebHeader extends React.Component{
                         <Menu.Item as={NavLink} to={{ pathname: '/register' }}>
                             <Button alert>회원가입</Button>
                         </Menu.Item>
-                        <Menu.Item>
+                        <Menu.Item as={NavLink} to={{ pathname: '/signin' }}>
                             <Button primary>로그인</Button>
                         </Menu.Item>
                     </Menu.Menu>

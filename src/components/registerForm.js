@@ -1,5 +1,4 @@
 import * as React from 'react';
-import { postRegister } from '../client';
 import { Button, Form, Segment } from 'semantic-ui-react';
 
 export default class RegisterForm extends React.Component {
@@ -15,15 +14,15 @@ export default class RegisterForm extends React.Component {
                 <Form>
                     <Form.Field>
                     <label>Name</label>
-                    <input placeholder='Type your name' />
+                    <input type="text" placeholder='Type your name' />
                     </Form.Field>
                     <Form.Field>
                     <label>E-mail</label>
-                    <input placeholder='Type your e-mail address' />
+                    <input type="text" placeholder='Type your e-mail address' />
                     </Form.Field>                    
                     <Form.Field>
                     <label>password</label>
-                    <input placeholder='password' />
+                    <input type="password" placeholder='password' />
                     </Form.Field>
                     <Button primary type='submit'>Register</Button>
                 </Form>

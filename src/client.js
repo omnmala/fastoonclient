@@ -11,6 +11,10 @@ export const getSeries = () => {
     return instance.get('/series')
 };
 
+export const getCurating = () => {
+    return instance.get('/series/curating')
+};
+
 export const getDetail = (title) => {
     return instance.get(`/series/${title}`)
 }

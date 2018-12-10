@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 import { Card, Image } from 'semantic-ui-react';
 import { getDetail } from '../client';
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 export default class WebtoonCard extends React.Component{
 
@@ -33,14 +33,14 @@ export default class WebtoonCard extends React.Component{
                     return (
                         <Card.Group>
                         <Card style={{ margin: '10px 10px 10px 10px' }}>
-                            <Image src={detail.thumnail} disabled />
+                            <Image src={detail.thumnail} />
                             <Card.Content>
                             <Card.Header>{detail.title}</Card.Header>
                             <Card.Meta>{detail.author}</Card.Meta>
                             <Card.Description>{detail.description}</Card.Description>
                             </Card.Content>
                         </Card>   
-                        <Link to={`/details/${detail.suggestionList[0]}`}>                     
+                        <Link as={NavLink} to={`/details/${detail.suggestionList[0]}`}>                     
                             <Card style={{ margin: '10px 10px 10px 10px' }}>
                                 <Card.Content>
                                 <Card.Header>{detail.suggestionList[0]}</Card.Header>
